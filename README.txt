@@ -1,5 +1,7 @@
 Tibia Market
 
+Qualquer problema me enviar um email : 21.lucasmessias@gmail.com
+
 O usuario deve informar um dictionary que contenha os itens que lhe interessam e importar no Market.py
 
 Exemplo do dictionary:
