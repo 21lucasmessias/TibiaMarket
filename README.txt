@@ -51,3 +51,49 @@ Utilizando o dict acima, obtemos :
          Necrotic Rod             1000        500           500    50.00%      20              4            2k
         Serpent Sword              900        300           600    66.67%      17              2            1k
         Northwind Rod             1500        700           800    53.33%      12              1            1k
+
+
+
+A pasta /Log , contem um utilitario para que voce organize suas ultimas vendas, inserindo o texto que é gerado na janela do proprio jogo apos a venda, ele ira formatar diretamente para um dict, que sera utilizado nos algoritmos de lucro
+
+Exemplo de Log.txt:
+
+12:51 Sold 20x knight legs for 100000 gold.
+12:52 Sold 34x underworld rod for 149600 gold.
+12:52 Sold 13x springsprout rod for 46800 gold.
+12:54 Sold 10x warrior helmet for 50000 gold.
+12:54 Sold 4x haunted blade for 32000 gold.
+12:54 Sold 4x titan axe for 16000 gold.
+12:54 Sold 1x knight legs for 5000 gold.
+12:54 Sold 1x skull staff for 6000 gold.
+12:54 Sold 15x tower shield for 120000 gold.
+12:54 Sold 7x knight armor for 35000 gold.
+12:54 Sold 7x knight armor for 35000 gold.
+12:54 Sold 3x knight armor for 15000 gold.
+12:54 Sold 8x tower shield for 64000 gold.
+12:54 Sold 18x knight legs for 90000 gold.
+12:55 Sold 4x dragon hammer for 8000 gold.
+12:55 Sold 4x knight axe for 8000 gold.
+12:55 Sold 4x skull staff for 24000 gold.
+12:55 Sold 1x dreaded cleaver for 15000 gold.
+12:55 Sold 1x giant sword for 17000 gold.
+12:55 Sold 1x knight armor for 5000 gold.
+12:55 Sold 1x knight legs for 5000 gold.
+
+Saida do Gerar_Log.py em formato de dict em Log_Formatado.py:
+
+Log_Formatado = [{'name': 'Dragon Hammer', 'quantity': 4},
+{'name': 'Dreaded Cleaver', 'quantity': 1},
+{'name': 'Giant Sword', 'quantity': 1},
+{'name': 'Haunted Blade', 'quantity': 4},
+{'name': 'Knight Armor', 'quantity': 18},
+{'name': 'Knight Axe', 'quantity': 4},
+{'name': 'Knight Legs', 'quantity': 40},
+{'name': 'Skull Staff', 'quantity': 5},
+{'name': 'Springsprout Rod', 'quantity': 13},
+{'name': 'Titan Axe', 'quantity': 4},
+{'name': 'Tower Shield', 'quantity': 23},
+{'name': 'Underworld Rod', 'quantity': 34},
+{'name': 'Warrior Helmet', 'quantity': 10}]
+
+Utilizando entao o algoritmo Adicionar_Compra.py , podemos introduzir essas novas vendas ao banco de dados, que é salvo em Todas_Compras.py, e podemos calcular o lucro recente com Calcular_Lucro_Recente.py, ou calcular o lucro total desde que comecou a utilizar o programa Calcular_Lucro_Total.py 
