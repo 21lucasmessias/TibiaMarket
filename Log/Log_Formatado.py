@@ -1,0 +1,13 @@
+Log_Formatado = [{'name': 'Dragon Hammer', 'quantity': 4},
+{'name': 'Dreaded Cleaver', 'quantity': 1},
+{'name': 'Giant Sword', 'quantity': 1},
+{'name': 'Haunted Blade', 'quantity': 4},
+{'name': 'Knight Armor', 'quantity': 18},
+{'name': 'Knight Axe', 'quantity': 4},
+{'name': 'Knight Legs', 'quantity': 40},
+{'name': 'Skull Staff', 'quantity': 5},
+{'name': 'Springsprout Rod', 'quantity': 13},
+{'name': 'Titan Axe', 'quantity': 4},
+{'name': 'Tower Shield', 'quantity': 23},
+{'name': 'Underworld Rod', 'quantity': 34},
+{'name': 'Warrior Helmet', 'quantity': 10}]
